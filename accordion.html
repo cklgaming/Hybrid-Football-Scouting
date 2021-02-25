@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<style>
+    button.accordion {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(22, 136, 22);
+        transition: 0.3s;
+        padding: 4px;
+        margin: 2px;
+        border-radius: 2px;
+    }
+    
+    button.accordion:hover {
+        background-color: rgb(15, 85, 15);
+    }
+    
+    button.accordion.active {
+        background-color: rgb(15, 85, 15);
+        border-radius: 2px;
+        margin: 4px;
+    }
+    
+    div.panel {
+        background-color: rgb(15, 85, 15);
+        border-radius: 2px;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        transition: 0.3s;
+        padding: 8px;
+    }
+    
+    div.panel.show {
+        opacity: 1;
+        max-height: 500;
+        padding: 4px;
+        margin: 2px;
+    }
+</style>
+<script>
+    var
+        accordions = document.querySelectiorAll("button.accordion");
+    for (cari-0;i<accordions.length;i++) {
+        accordions[i].onclick = function() {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+</script>
+<button class="accordion">
+    Pick 1: Trevor Lawrence, Clemson QB
+</button>
+<div class="panel">
+    Lawrence is the consensus number 1 pick in this year's draft.
+</div>
+<button class="accordion">
+    Pick 2: Zach Wilson, BYU QB
+</button>
+<div class="panel">
+    Wilson, the second fiddle to Lawrence in this draft class, isn't who the Jets wanted, but they're just as happy with him.
+</div>
