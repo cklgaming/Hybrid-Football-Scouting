@@ -1,0 +1,7 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library 'C:/Users/Colin Lassey/Dropbox/My PC (LAPTOP-CRJ34RQ2)/Documents/.html/web server/usbwebserver\\php\\ext\\php_curl.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Thu Feb 25 19:06:22.366020 2021] [mpm_winnt:notice] [pid 25952:tid 832] AH00455: Apache/2.4.29 (Win32) PHP/7.1.11 configured -- resuming normal operations
+[Thu Feb 25 19:06:22.366020 2021] [mpm_winnt:notice] [pid 25952:tid 832] AH00456: Server built: Nov  3 2017 01:01:54
+[Thu Feb 25 19:06:22.366020 2021] [core:notice] [pid 25952:tid 832] AH00094: Command line: 'C:\\Users\\Colin Lassey\\Dropbox\\My PC (LAPTOP-CRJ34RQ2)\\Documents\\.html\\web server\\usbwebserver/apache2/bin/httpd_usbwv8.exe -d C:/Users/Colin Lassey/Dropbox/My PC (LAPTOP-CRJ34RQ2)/Documents/.html/web server/usbwebserver/apache2'
+[Thu Feb 25 19:06:22.380971 2021] [mpm_winnt:notice] [pid 25952:tid 832] AH00418: Parent: Created child process 8212
+PHP Warning:  PHP Startup: Unable to load dynamic library 'C:/Users/Colin Lassey/Dropbox/My PC (LAPTOP-CRJ34RQ2)/Documents/.html/web server/usbwebserver\\php\\ext\\php_curl.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Thu Feb 25 19:06:23.079643 2021] [mpm_winnt:notice] [pid 8212:tid 820] AH00354: Child: Starting 64 worker threads.

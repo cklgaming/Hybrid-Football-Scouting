@@ -129,38 +129,63 @@
         padding-top: 2.5%;
     }
 </style>
+<style>
     .text1 {
         font-size: x-large;
         font-style: bold;
         font-weight: bold;
+        padding-left: 800px;
     }
     .password1 {
         margin-left:2.5pt;
         
     }
 </style>
-<header class="text1 ">
+// Script to ensure the username is remembered by the site. 
+<script>
+const rmCheck = document.getElementById("rememberMe"),
+  emailInput = document.getElementById("email");
+
+if (localStorage.checkbox && localStorage.checkbox !== "") {
+rmCheck.setAttribute("checked", "checked");
+emailInput.value = localStorage.username;
+} else {
+rmCheck.removeAttribute("checked");
+emailInput.value = "";
+}
+
+function lsRememberMe() {
+if (rmCheck.checked && emailInput.value !== "") {
+  localStorage.username = emailInput.value;
+  localStorage.checkbox = rmCheck.value;
+} else {
+  localStorage.username = "";
+  localStorage.checkbox = "";
+}
+}
+</script>
+<header style="text-align:center" class="text1">
     Sign Up
 </header>
-<p>
-    <form action="action_page.php ">
+<p style="text-align:center">
+    <form action="action_page.php" style="text-align:center">
     <div>
-      <label for="uname "><b>Username</b></label>
-      <input type="text " placeholder="Enter Username " name="uname " required><br>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required><br>
   
-      <label for="psw "><b>Password  </b></label>
-      <input class="password1 "type="password " placeholder="Enter Password " name="psw " required><br>
+      <label for="psw"><b>Password  </b></label>
+      <input class="password1"type="password" placeholder="Enter Password" name="password" required><br>
   
       <label>
-        <input type="checkbox " name="remember " value=" ">Remember me
-      </label>
+        <input type="checkbox" name="remember" value="lsRememberMe">Remember me
+      </label> <br>
       
-      <button type="submit " onclick="document.location.href='index.html' ">Login</button>
+      <button type="submit" onclick="document.location.href='index.html'">Login</button>
     </div>
   
-    <div style="background-color:#f1f1f1 ">
-      <button type="button " class="cancelbtn ">Cancel</button>
-      <span class="psw ">Forgot <a href="# ">password?</a></span>
+    <div style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button> <br>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 </p>
