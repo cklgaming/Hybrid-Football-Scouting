@@ -36,7 +36,7 @@
       </div>
     </p>
     <p><a href="index.html ">Home</a></p>
-    <img class="image1" src="HFSlogo.png">
+    <img class="image1" src="HFSlogo.png" href="index.html">
 </div>
 </nav>
 <style>
@@ -46,10 +46,14 @@
   padding-top: 0px;
   padding-bottom: 100px;
 }
-.html {
-  background-image: "football-field-background.jpeg";
-}
-.dropdown {
+/*Class "body" is not linked to anything yet. Set for background image but I can't figure that out yet.*/
+.body {
+  background-image: url(football-field-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6
+} 
+  .dropdown {
   float: right;
   overflow: hidden;
 }
